@@ -16,11 +16,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <br />
 
 ## Developer Guide
+
 ### Clone the Repository
 
 ```bash
-$ git clone https://github.com/mhubelbank/snowball.git
-$ cd snowball
+git clone https://github.com/mhubelbank/snowball.git
+cd snowball
 ```
 
 <br />
@@ -29,24 +30,24 @@ $ cd snowball
 > For `Unix` & `MacOS` 
 
 ```bash
-$ virtualenv env
-$ source env/bin/activate
-$ pip3 install -r requirements.txt
+virtualenv env
+source env/bin/activate
+pip3 install -r requirements.txt
 ```
 
 > For `Windows` 
 ```
-$ virtualenv env
-$ . env/Scripts/activate
-$ pip3 install -r requirements.txt 
+virtualenv env
+. env/Scripts/activate
+pip3 install -r requirements.txt 
 ```
 
 <br />
 
 ### Create Local Database
 ```bash
-$ python manage.py makemigrations
-$ python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
 ```
 
 <br />
@@ -54,21 +55,9 @@ $ python manage.py migrate
 ### Run the Snowball App
 
 ```bash
-$ python manage.py runserver
+python manage.py runserver
 ```
 
 Then, navigate to `http://127.0.0.1:8000/`. 
-
-<br />
-
-## Administrator Guide
-
-### Create a User
-
-By default, the app redirects guest users to authenticate. In order to access the private pages: 
-
-- Start the app via `flask run`
-- Access the `registration` page and create a new user: `http://127.0.0.1:8000/register/`
-- Access the `sign in` page and authenticate: `http://127.0.0.1:8000/login/`
 
 <br />
