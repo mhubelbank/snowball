@@ -1,4 +1,4 @@
-# **snowball.app**  ❅  a financial independence tool
+# **snowball**  ❅  a financial independence tool
 
 > Developed by [Mara](https://github.com/mhubelbank) && [Timmy](https://github.com/M-Allahham)
 
@@ -43,10 +43,10 @@ $ pip3 install -r requirements.txt
 
 <br />
 
-### Create Database
+### Create Local Database
 ```bash
-$ python manage.py makemigrations --fake-initial
-$ python manage.py migrate --fake-initial
+$ python manage.py makemigrations
+$ python manage.py migrate
 ```
 
 <br />
