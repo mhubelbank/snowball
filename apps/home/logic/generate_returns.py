@@ -19,7 +19,6 @@ def generate_returns(years: int, avg: float = 0.1025, std_dev: float = 0.1) -> l
         A list of floats representing the rate of return of the US stock market
     """
 
-    np.random.seed(int(random.random() * 100000))
     returns = np.random.normal(loc=avg, scale=std_dev, size=years)
     returns = list(returns)
 
