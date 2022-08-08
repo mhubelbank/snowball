@@ -9,6 +9,7 @@ __pycache__/
 # database & logs
 *.db
 *.sqlite3
+migrations/*
 *.log
 
 # venv
