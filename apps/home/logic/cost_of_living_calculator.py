@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 
 def get_cost_of_living(city: str, state: str, total_adults: int, working_adults: int, children: int) -> float:
-    """This function uses the MIT Cost of Living calculator to find the expected cost of living based on family size
+    """This function uses the MIT Cost of Living calculator to find the expected cost of living (after taxes) based on family size
 
     Parameters
     ----------
@@ -28,7 +28,7 @@ def get_cost_of_living(city: str, state: str, total_adults: int, working_adults:
         return "Too many children!"
 
     # URL to get the latitude and longitude of a city
-    LAT_LONG_URL = f"http://api.openweathermap.org/geo/1.0/direct?q={city},{state},US&limit=1&appid=d375f2270b268435bedceb0d3bff9de6"
+    LAT_LONG_URL = f"https://geocode.maps.co/search?q={city},{state}"
 
     response = requests.get(url=LAT_LONG_URL)
 
