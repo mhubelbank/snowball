@@ -1,6 +1,6 @@
 import requests
 
-def get_effective_income_tax_rate(money: int, city: str, state: str, married=False, dependents=1) -> float:
+def get_effective_income_tax_rate(money: int, city: str, state: str, married:bool=False, dependents:int=1) -> float:
     """This function takes in tax-relevant parameters and returns the effective tax rate
 
     Parameters
