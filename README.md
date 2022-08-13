@@ -27,17 +27,18 @@ cd snowball
 <br />
 
 ### Set up Virtual Environment
+**Note: Python version 3.7 or higher is needed to properly install Snowball dependencies.**
+
 > For `Unix` & `MacOS` 
 
 ```bash
-virtualenv env
+virtualenv --python=3.10.6 env
 source env/bin/activate
 pip3 install -r requirements.txt
 ```
 
 > For `Windows` 
 ```
-# Python 3.7 or higher is needed
 virtualenv --python=3.10.6 env
 . env/Scripts/activate
 pip3 install -r requirements.txt 
