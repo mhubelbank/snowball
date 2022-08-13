@@ -37,7 +37,8 @@ pip3 install -r requirements.txt
 
 > For `Windows` 
 ```
-virtualenv env
+# Python 3.7 or higher is needed
+virtualenv --python=3.10.6 env
 . env/Scripts/activate
 pip3 install -r requirements.txt 
 ```
