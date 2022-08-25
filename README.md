@@ -54,6 +54,14 @@ python manage.py migrate
 
 <br />
 
+### Create Superuser for Admin Access
+
+```bash
+winpty python manage.py createsuperuser
+```
+
+<br />
+
 ### Run the Snowball App
 
 ```bash
@@ -63,3 +71,4 @@ python manage.py runserver
 Then, navigate to `http://127.0.0.1:8000/`. 
 
 <br />
+
